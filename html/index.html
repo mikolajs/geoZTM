@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html dir="ltr" lang="en-US"><head><!-- Created by Artisteer v4.1.0.59861 -->
+<html dir="ltr" lang="pl"><head>
     <meta charset="utf-8">
     <title>geoZTM</title>
     <meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no, width = device-width">
@@ -58,8 +58,8 @@ function showPosition(position)
   lon=position.coords.longitude;
   latlon=new google.maps.LatLng(lat, lon)
   mapholder=document.getElementById('mapholder')
-  mapholder.style.height=screen.height;
-  mapholder.style.width=screen.width;
+  mapholder.style.height=screen.availHeight+"px";
+  mapholder.style.width=screen.availWidth+"px";
 
   var myOptions={
   center:latlon,zoom:15,
