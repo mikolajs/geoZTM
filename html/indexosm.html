@@ -25,6 +25,10 @@
                                               map.getProjectionObject() //to Spherical Mercator Projection
                                             );
                                             
+                                            
+            
+                                            
+                                            
             markers.addMarker(new OpenLayers.Marker(lonLat));
            
             map.setCenter(lonLat, 18 // Zoom level
@@ -42,11 +46,15 @@
           ), 15 // Zoom level
          );
         var markers = new OpenLayers.Layer.Markers( "Markers" );
+        
         map.addLayer(markers);
+   
                              
             
       
       }
+      
+      
     </script>
   </head>
 <body onload="init();">
